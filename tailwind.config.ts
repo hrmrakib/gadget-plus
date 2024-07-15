@@ -13,6 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      rotate: {
+        "180": "180deg",
+      },
+      keyframes: {
+        "border-expand": {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+      },
+      animation: {
+        "border-expand": "border-expand 0.5s ease-in-out forwards",
+      },
     },
   },
   plugins: [],
