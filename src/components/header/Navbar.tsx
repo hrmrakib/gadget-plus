@@ -25,10 +25,10 @@ const Navbar = () => {
           <div className='relative group'>
             <div className="flex group items-center gap-1 cursor-pointer relative text-sm text-gray-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-width after:duration-500 after:ease-in-out hover:after:w-full">
               Home
-              <FaAngleDown className='transition-transform duration-400 ease-in-out group-hover:rotate-180' />
+              {/* <FaAngleDown className='transition-transform duration-400 ease-in-out group-hover:rotate-180' /> */}
             </div>
 
-            <div className='absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+            {/* <div className='z-50 absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               <div
                 className='py-1 pl-4 flex flex-col gap-2 group'
                 role='menu'
@@ -57,7 +57,7 @@ const Navbar = () => {
                   Option 3
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className='relative group'>
             <li className="flex items-center gap-1 cursor-pointer relative text-sm text-gray-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-width after:duration-500 after:ease-in-out hover:after:w-full">
@@ -65,71 +65,99 @@ const Navbar = () => {
               <FaAngleDown className='transition-transform duration-400 ease-in-out group-hover:rotate-180' />
             </li>
 
-            <div className='absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+            <div className='z-50 absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               <div
                 className='py-1 pl-2'
                 role='menu'
                 aria-orientation='vertical'
                 aria-labelledby='options-menu'
               >
-                <a
+                <Link
                   href='#'
                   className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
-                <a
+                  iPhone 15 Pro
+                </Link>
+                <Link
                   href='#'
                   className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
-                <a
+                  OnePlus 11
+                </Link>
+                <Link
                   href='#'
                   className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
+                  OPPO F23 Ultra
+                </Link>
+                <Link
+                  href='#'
+                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  role='menuitem'
+                >
+                  Sumsang Galaxy
+                </Link>
               </div>
             </div>
           </div>
           <div className='relative group'>
             <li className="flex items-center gap-1 cursor-pointer relative text-sm text-gray-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-width after:duration-500 after:ease-in-out hover:after:w-full">
-              Prices
+              Pages
               <FaAngleDown className='transition-transform duration-400 ease-in-out group-hover:rotate-180' />
             </li>
 
-            <div className='absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+            <div className='z-50 absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               <div
                 className='py-1 pl-2'
                 role='menu'
                 aria-orientation='vertical'
                 aria-labelledby='options-menu'
               >
-                <a
+                <Link
                   href='#'
                   className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
-                <a
+                  About Us
+                </Link>
+                <Link
                   href='#'
                   className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
-                <a
+                  Contact
+                </Link>
+                <Link
                   href='#'
                   className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
+                  FAQ's
+                </Link>
+                <Link
+                  href='#'
+                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  role='menuitem'
+                >
+                  Privacy & Policy
+                </Link>
+                <Link
+                  href='#'
+                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  role='menuitem'
+                >
+                  Shipping & Return
+                </Link>
+                <Link
+                  href='#'
+                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  role='menuitem'
+                >
+                  Terms & Condition
+                </Link>
               </div>
             </div>
           </div>
@@ -139,7 +167,7 @@ const Navbar = () => {
               <FaAngleDown className='transition-transform duration-400 ease-in-out group-hover:rotate-180' />
             </li>
 
-            <div className='absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+            <div className='z-50 absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               <div
                 className='py-1 pl-2'
                 role='menu'

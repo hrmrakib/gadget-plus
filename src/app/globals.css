@@ -48,14 +48,41 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-
 /* hero bounce area */
 .bounce {
-    animation: bounce2 2s ease infinite;
+  animation: bounce 4s ease infinite;
+  animation-delay: 2s;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-      40% {transform: translateY(-30px);}
-      60% {transform: translateY(-15px);}
+  40% {
+    transform: translateY(-30px);
   }
-  
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce2 {
+  animation: bounce2 3s ease infinite;
+}
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
