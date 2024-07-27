@@ -44,14 +44,14 @@ const Navbar = () => {
                 </a>
                 <a
                   href='#'
-                  className='w-max text-sm text-white hover:border-b-2'
+                  className='w-max text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Option 2
                 </a>
                 <a
                   href='#'
-                  className='w-max text-sm text-white hover:border-b-2'
+                  className='w-max text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Option 3
@@ -74,28 +74,28 @@ const Navbar = () => {
               >
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   iPhone 15 Pro
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   OnePlus 11
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   OPPO F23 Ultra
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Sumsang Galaxy
@@ -118,42 +118,42 @@ const Navbar = () => {
               >
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   About Us
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Contact
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   FAQ's
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Privacy & Policy
                 </Link>
                 <Link
                   href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Shipping & Return
                 </Link>
                 <Link
-                  href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  href='/terms'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
                   Terms & Condition
@@ -174,27 +174,20 @@ const Navbar = () => {
                 aria-orientation='vertical'
                 aria-labelledby='options-menu'
               >
-                <a
-                  href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                <Link
+                  href='blog'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
-                <a
-                  href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
+                  Blog Page
+                </Link>
+                <Link
+                  href='/article'
+                  className='inline-block px-4 py-2 text-sm text-white hover:text-blue-500'
                   role='menuitem'
                 >
-                  Option 1
-                </a>
-                <a
-                  href='#'
-                  className='inline-block px-4 py-2 text-sm text-white hover:border-b-2'
-                  role='menuitem'
-                >
-                  Option 1
-                </a>
+                  Article Page
+                </Link>
               </div>
             </div>
           </div>

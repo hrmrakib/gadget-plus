@@ -9,6 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.t-shadow {
+  text-shadow: 93px -17px 3px rgba(116, 116, 116, 0.51);
+}
+
+/* hero slide */
 [class^="number-slide"],
 [class*=" number-slide"] {
   /* background: grey; */
@@ -85,4 +90,80 @@ body {
   60% {
     transform: translateY(-20px);
   }
+}
+
+/* trending categories */
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  /* background: grey; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 200px;
+  max-height: 100vh;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.keen-slider {
+  transition: height 0.3s;
+}
+
+.keen-slider .keen-slider__slide {
+  min-height: auto !important;
 }
