@@ -13,7 +13,25 @@ body {
   text-shadow: 93px -17px 3px rgba(116, 116, 116, 0.51);
 }
 
-/* hero slide */
+/* scrollbar w/h zero */
+.scrollbar-zero::-webkit-scrollbar {
+  width: no;
+  height: 0;
+  background: none;
+}
+
+.scrollbar-zero::-webkit-scrollbar-thumb {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.scrollbar-zero::-webkit-scrollbar-track {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+/* hero slide - package css */
 [class^="number-slide"],
 [class*=" number-slide"] {
   /* background: grey; */
