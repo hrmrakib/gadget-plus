@@ -1,5 +1,6 @@
 import Hero from "@/components/header/Hero";
 import BigDiscount from "@/components/home/BigDiscount";
+import LimitedTimeOffer from "@/components/home/LimitedTimeOffer";
 import NewAndBestCollection from "@/components/home/NewAndBestCollection";
 import TopNewArrivals from "@/components/home/TopNewArrivals";
 import TrendingCategories from "@/components/home/TrendingCategories";
@@ -14,6 +15,7 @@ export default function Home() {
       <TrendingProducts />
       <BigDiscount />
       <TopNewArrivals />
+      <LimitedTimeOffer />
     </div>
   );
 }
