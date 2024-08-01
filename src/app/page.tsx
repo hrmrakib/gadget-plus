@@ -1,5 +1,7 @@
 import Hero from "@/components/header/Hero";
 import BigDiscount from "@/components/home/BigDiscount";
+import CheckoutTheDiscount from "@/components/home/CheckoutTheDiscount";
+import CustomerFeedback from "@/components/home/CustomerFeedback";
 import LimitedTimeOffer from "@/components/home/LimitedTimeOffer";
 import NewAndBestCollection from "@/components/home/NewAndBestCollection";
 import TopNewArrivals from "@/components/home/TopNewArrivals";
@@ -16,6 +18,8 @@ export default function Home() {
       <BigDiscount />
       <TopNewArrivals />
       <LimitedTimeOffer />
+      <CheckoutTheDiscount />
+      <CustomerFeedback />
     </div>
   );
 }

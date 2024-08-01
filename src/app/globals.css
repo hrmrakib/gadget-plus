@@ -32,7 +32,7 @@ body {
   border-radius: 0;
 }
 /* btn hover */
-.btn {
+.shop-btn {
   position: relative;
   display: inline-block;
   width: auto;
@@ -43,7 +43,7 @@ body {
   margin: 0px 25px 15px;
   min-width: 150px;
 }
-.btn span {
+.shop-btn span {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -58,11 +58,11 @@ body {
 }
 
 /*--- btn-1 ---*/
-.btn-1::before {
+.shop-btn::before {
   background-color: rgb(28, 31, 30);
   transition: 0.3s ease-out;
 }
-.btn-1 span {
+.shop-btn span {
   color: rgb(255, 255, 255);
   border: 1px solid rgb(28, 31, 30);
   transition: 0.2s 0.1s;

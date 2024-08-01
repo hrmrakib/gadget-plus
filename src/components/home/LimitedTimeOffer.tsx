@@ -6,7 +6,7 @@ import { FaCartPlus } from "react-icons/fa";
 const LimitedTimeOffer = () => {
   return (
     <div className='w-[96%] mx-auto mt-20'>
-      <h2 className='text-3xl text-white t-shadow mb-8'>TOP NEW ARRIVALS</h2>
+      <h2 className='text-3xl text-white t-shadow mb-8'>LIMITED TIME OFFER</h2>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
         <div className='bg-[#1c1c1c] p-5 flex gap-10'>
