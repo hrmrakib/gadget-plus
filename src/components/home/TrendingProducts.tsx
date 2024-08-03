@@ -8,8 +8,8 @@ const TrendingProducts = () => {
       <h2 className='text-3xl text-white t-shadow mb-8'>TrendingProducts</h2>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
-        {[1, 2, 3, 4].map(() => (
-          <div className='bg-[#1c1c1c] p-5'>
+        {[1, 2, 3, 4].map((v, i) => (
+          <div key={i} className='bg-[#1c1c1c] p-5'>
             <div className='bg-[#262626] flex flex-col items-center justify-center gap-2'>
               <Image
                 src='/ultramax-watch.avif'
