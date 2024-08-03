@@ -10,12 +10,12 @@ const Hero = () => {
           <HeroCarousel />
         </div>
 
-        <div className='absolute top-12 left-16 bounce duration-1000 ease-in-out'>
+        {/* <div className='absolute top-12 left-16 bounce duration-1000 ease-in-out'>
           <Image src='/blutooth-ear.avif' width={200} height={300} alt='' />
         </div>
         <div className='absolute bottom-12 right-16 bounce2 duration-1000 ease-in-out'>
           <Image src='/blutooth-head.avif' width={200} height={300} alt='' />
-        </div>
+        </div> */}
       </div>
     </div>
   );
