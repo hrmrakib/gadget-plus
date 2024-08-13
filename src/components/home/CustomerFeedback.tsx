@@ -7,7 +7,7 @@ const slider = [
   {
     img: "/iphone15.jpg",
     reviewText:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam odio deleniti a modi nostrum soluta minima commodi consequuntur eveniet!",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam odio deleniti a modi nostrum soluta minima commodi consequuntur eveniet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam odio deleniti a modi nostrum soluta minima commodi consequuntur eveniet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam odio deleniti a modi nostrum soluta minima commodi consequuntur eveniet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam odio deleniti a modi nostrum soluta minima commodi consequuntur eveniet!",
     customerName: "Moinal Dola",
     designation: "kaca mal",
     rating: 2,
@@ -18,6 +18,14 @@ const slider = [
     customerName: "Sobur Mia",
     designation: "Kaji",
     rating: 5,
+  },
+  {
+    img: "/headphone.jpg",
+    reviewText:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam odio deleniti a modi nostrum soluta minima commodi consequuntur eveniet!",
+    customerName: "Moinal Dola",
+    designation: "kaca mal",
+    rating: 2,
   },
 ];
 
@@ -33,12 +41,10 @@ const CustomerFeedback = () => {
 
     // console.log(source.length, index);
 
-    
     setIndex((prev) => prev + 1);
     console.log({ index });
     setCurrentSlider(slider[index]);
   };
-
 
   // console.log({ currentSlider, index });
 
@@ -47,24 +53,32 @@ const CustomerFeedback = () => {
       <h2 className='text-3xl text-white t-shadow mb-8'>
         OUR CUSTOMER FEEDBACK
       </h2>
-      <div className='relative flex items-center gap-10'>
-        <div>
-          <Image src={currentSlider?.img} width={200} height={200} alt='' />
+      <div className='h-[300px] flex gap-10'>
+        <div className='min-w-[300px]'>
+          <Image
+            className='min-w-full min-h-full'
+            src={currentSlider?.img}
+            width={300}
+            height={300}
+            alt=''
+          />
         </div>
-        <div>
-          <p className='text-white'>{currentSlider?.reviewText}</p>
-        </div>
+        <div className='relative bg-gray-800 p-8'>
+          <p className='text-white text-sm'>"{currentSlider?.reviewText}"</p>
 
-        {/* forward and backword */}
-        <div className='absolute top-1/2 cursor-pointer left-1 bg-[#2043f1] hover:bg-[#163cf7ab] p-1 rounded'>
-          <BiLeftArrowAlt className='text-white text-xl' />
-        </div>
+          {/* forward and backword */}
+          <div className='absolute bottom-0 left-5 flex'>
+            <div className='cursor-pointer left-1 bg-[#2043f1] hover:bg-[#163cf7ab] p-1 rounded'>
+              <BiLeftArrowAlt className='text-white text-xl' />
+            </div>
 
-        <div
-          onClick={handleGoSlider}
-          className='absolute top-1/2 cursor-pointer right-1 bg-[#2043f1] hover:bg-[#163cf7a9] p-1 rounded'
-        >
-          <BiRightArrowAlt className='text-white text-xl' />
+            <div
+              onClick={handleGoSlider}
+              className='cursor-pointer right-1 bg-[#2043f1] hover:bg-[#163cf7a9] p-1 rounded'
+            >
+              <BiRightArrowAlt className='text-white text-xl' />
+            </div>
+          </div>
         </div>
       </div>
     </div>
