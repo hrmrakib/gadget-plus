@@ -17,7 +17,7 @@ const BlogPosts = async () => {
       <h2 className='text-3xl text-white t-shadow'>Blog Posts</h2>
 
       <div className='mt-12 grid grid-cols-3 gap-6'>
-        {posts.map((post: any) => (
+        {posts?.map((post: any) => (
           <div key={post?.id} className='border'>
             <Image
               className='w-full h-60'
