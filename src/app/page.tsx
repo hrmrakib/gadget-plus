@@ -8,6 +8,8 @@ import NewAndBestCollection from "@/components/home/NewAndBestCollection";
 import TopNewArrivals from "@/components/home/TopNewArrivals";
 import TrendingCategories from "@/components/home/TrendingCategories";
 import TrendingProducts from "@/components/home/TrendingProducts";
+import ProductEffect from "@/components/home/ProductEffect";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +24,9 @@ export default function Home() {
       <CheckoutTheDiscount />
       <CustomerFeedback />
       <BlogPosts />
+      {/* <ProductEffect /> */}
+
+      <Footer />
     </div>
   );
 }
