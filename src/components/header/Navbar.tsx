@@ -201,11 +201,19 @@ const Navbar = () => {
           <div>
             <FaRegUser />
           </div>
-          <div>
+          <div className='relative'>
             <FaRegHeart />
+            <span
+              className={`absolute w-4 h-4 -top-2 -right-2 rounded-full bg-blue-600 text-[12px] flex items-center justify-center`}
+            >
+              5
+            </span>
           </div>
-          <div>
+          <div className='relative'>
             <IoBagAddSharp />
+            <span className='absolute w-4 h-4 -top-2 -right-2 rounded-full bg-blue-600 text-[12px] flex items-center justify-center'>
+              2
+            </span>
           </div>
         </div>
       </div>
