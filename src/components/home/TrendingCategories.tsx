@@ -11,7 +11,7 @@ const TrendingCategories = () => {
         <div className='mt-10 flex gap-10 px-4 overflow-x-scroll scrollbar-zero'>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((v, i) => (
             <div key={i}>
-              <div className='bg-[#534848] rounded-full w-32 h-32 flex items-center justify-center'>
+              <div className='bg-[#534848] rounded-full w-36 h-36 flex items-center justify-center'>
                 <Image
                   src='/headphone.png'
                   className=''
