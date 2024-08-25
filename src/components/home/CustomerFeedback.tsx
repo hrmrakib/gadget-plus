@@ -9,7 +9,7 @@ const testimonials = [
     reviewText:
       "This platform has significantly improved my productivity. The tools are intuitive, and the support team is incredibly responsive. Highly recommended!",
     star: 5,
-    qoutePng: "/testimonial/quote.png",
+    quotePng: "/testimonial/quote.png",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const testimonials = [
     reviewText:
       "I've been able to streamline our workflows thanks to the comprehensive features offered. The user experience is top-notch and the customer service is exceptional.",
     star: 4,
-    qoutePng: "/testimonial/quote.png",
+    quotePng: "/testimonial/quote2.png",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const testimonials = [
     reviewText:
       "The attention to detail and commitment to user satisfaction is evident. This service has been a game-changer for our team.",
     star: 5,
-    qoutePng: "/testimonial/quote.png",
+    quotePng: "/testimonial/quote3.png",
   },
 ];
 

@@ -36,10 +36,26 @@ const FeedbackCarousel = ({ items }) => {
             "{items[currentIndex]?.reviewText}"
           </p>
 
-          <h2 className='text-2xl text-white'>{items[currentIndex]?.name}</h2>
-          <h3 className='text-blue-600 mt-2'>
-            {items[currentIndex]?.designation}
-          </h3>
+          <div className='flex justify-between'>
+            <div>
+              <h2 className='text-2xl text-white'>
+                {items[currentIndex]?.name}
+              </h2>
+              <h3 className='text-blue-600 mt-2'>
+                {items[currentIndex]?.designation}
+              </h3>
+            </div>
+
+            <div className='-ml-10'>
+              <Image
+              className="-ml-10"
+                src={items[currentIndex]?.quotePng}
+                width={100}
+                height={100}
+                alt='quote'
+              />
+            </div>
+          </div>
 
           {/* forward and backword */}
           <div className='absolute bottom-5 left-8 flex'>
