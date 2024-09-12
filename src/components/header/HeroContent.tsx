@@ -52,6 +52,7 @@ export default function HeroCarousel() {
         <div className='carousel keen-slider' ref={sliderRef}>
           <div className='carousel__cell number-slide1 '>
             <Image
+              className='w-[200px] h-[200px]'
               src='/iphone14vs15.jpg'
               width={350}
               height={350}
@@ -59,19 +60,22 @@ export default function HeroCarousel() {
             />
           </div>
           <div className='carousel__cell number-slide2'>
-            <Image src='/vivobook.avif' width={350} height={350} alt='iphone' />
+            <Image
+              className='w-[200px] h-[200px]'
+            
+            src='/vivobook.avif' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide3'>
-            <Image src='/watch.avif' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/watch.avif' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide4'>
-            <Image src='/speaker.avif' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/speaker.avif' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide5'>
-            <Image src='/headphone.png' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/headphone.png' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide6'>
-            <Image src='/macbook.jpg' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/macbook.jpg' width={350} height={350} alt='iphone' />
           </div>
         </div>
       </div>

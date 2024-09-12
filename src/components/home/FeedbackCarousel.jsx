@@ -21,7 +21,7 @@ const FeedbackCarousel = ({ items }) => {
       <h2 className='text-3xl text-white t-shadow mb-8'>
         OUR CUSTOMER FEEDBACK
       </h2>
-      <div className='flex items-center gap-10 h-[300px]'>
+      <div className='flex flex-col lg:flex-row items-center gap-10 h-[300px]'>
         <div className='min-w-[300px] max-w-[300px] h-[300px]'>
           <Image
             className='min-w-[300px] max-w-[300px] h-[300px]'
@@ -48,7 +48,7 @@ const FeedbackCarousel = ({ items }) => {
 
             <div className='-ml-10'>
               <Image
-              className="-ml-10"
+                className='-ml-10'
                 src={items[currentIndex]?.quotePng}
                 width={100}
                 height={100}

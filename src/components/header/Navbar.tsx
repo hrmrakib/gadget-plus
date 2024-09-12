@@ -21,43 +21,11 @@ const Navbar = () => {
         </div>
 
         {/* menubar item */}
-        <div className='flex items-center gap-8 *:text-white'>
+        <div className='hidden lg:flex items-center gap-8 *:text-white'>
           <div className='relative group'>
             <div className="flex group items-center gap-1 cursor-pointer relative text-sm text-gray-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-width after:duration-500 after:ease-in-out hover:after:w-full">
               Home
-              {/* <FaAngleDown className='transition-transform duration-400 ease-in-out group-hover:rotate-180' /> */}
             </div>
-
-            {/* <div className='z-50 absolute mt-5 w-40 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-              <div
-                className='py-1 pl-4 flex flex-col gap-2 group'
-                role='menu'
-                aria-orientation='vertical'
-                aria-labelledby='options-menu'
-              >
-                <a
-                  href='#'
-                  className="w-max text-sm text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-width after:duration-500 after:ease-in-out hover:after:w-full"
-                  role='menuitem'
-                >
-                  Option 1
-                </a>
-                <a
-                  href='#'
-                  className='w-max text-sm text-white hover:text-blue-500'
-                  role='menuitem'
-                >
-                  Option 2
-                </a>
-                <a
-                  href='#'
-                  className='w-max text-sm text-white hover:text-blue-500'
-                  role='menuitem'
-                >
-                  Option 3
-                </a>
-              </div>
-            </div> */}
           </div>
           <div className='relative group'>
             <li className="flex items-center gap-1 cursor-pointer relative text-sm text-gray-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-width after:duration-500 after:ease-in-out hover:after:w-full">
