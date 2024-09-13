@@ -1,6 +1,6 @@
 import Hero from "@/components/header/Hero";
 import BigDiscount from "@/components/home/BigDiscount";
-import BlogPosts from "@/components/home/BlogPosts";
+// import BlogPosts from "@/components/home/BlogPosts";
 import CheckoutTheDiscount from "@/components/home/CheckoutTheDiscount";
 import CustomerFeedback from "@/components/home/CustomerFeedback";
 import LimitedTimeOffer from "@/components/home/LimitedTimeOffer";
@@ -23,7 +23,7 @@ export default function Home() {
       <LimitedTimeOffer />
       <CheckoutTheDiscount />
       <CustomerFeedback />
-      <BlogPosts />
+      {/* <BlogPosts /> */}
       {/* <ProductEffect /> */}
 
       {/* <Footer /> */}
