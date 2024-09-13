@@ -26,7 +26,7 @@ export default function Home() {
       {/* <BlogPosts /> */}
       {/* <ProductEffect /> */}
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

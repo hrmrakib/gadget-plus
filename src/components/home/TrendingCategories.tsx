@@ -3,14 +3,52 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import Link from "next/link";
 
 const trending = [
   {
-    id:1,
-    name: "",
-    image: ""
-  }
-]
+    id: 1,
+    name: "iPhone",
+    image: "/trending/iphone.webp",
+    url: "mobile",
+  },
+  {
+    id: 2,
+    name: "speaker",
+    image: "/trending/speaker.avif",
+    url: "speaker",
+  },
+  {
+    id: 3,
+    name: "headphones",
+    image: "/trending/headphones.avif",
+    url: "headphones",
+  },
+  {
+    id: 4,
+    name: "laptop",
+    image: "/trending/laptop.avif",
+    url: "laptop",
+  },
+  {
+    id: 5,
+    name: "airpods",
+    image: "/trending/airpods.webp",
+    url: "airpods",
+  },
+  {
+    id: 6,
+    name: "smart watch",
+    image: "/trending/smart-watch.avif",
+    url: "smartwatch",
+  },
+  {
+    id: 7,
+    name: "airpods",
+    image: "/trending/iphone.webp",
+    url: "mobile",
+  },
+];
 
 const TrendingCategories = () => {
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -42,28 +80,32 @@ const TrendingCategories = () => {
           ref={scrollContainerRef}
           className='mt-10 flex gap-16 px-4 overflow-x-auto scrollbar-zero'
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((v, i) => (
-            <div key={i}>
-              <div className='bg-[#534848] rounded-full w-36 h-36 flex items-center justify-center'>
+          {trending.map((item, i) => (
+            <Link
+              href={`/collection/${item?.url}`}
+              key={i}
+              className='cursor-pointer'
+            >
+              <div className='bg-[#534848] rounded-full w-40 h-40 flex items-center justify-center'>
                 <Image
-                  src='/headphone.png'
-                  className=''
+                  src={item?.image}
+                  className='w-28 h-28'
                   width={150}
                   height={150}
-                  alt='headphone'
+                  alt={item?.name}
                 />
               </div>
-              <h2 className='text-center text-white mt-2'>Headphone</h2>
-            </div>
+              <h2 className='text-center text-white mt-2'>{item?.name}</h2>
+            </Link>
           ))}
         </div>
         {/* forward and back */}
-        <div
+        <button
           onClick={scrollLeft}
           className='absolute top-1/2 cursor-pointer left-1 bg-[#2043f1] hover:bg-[#163cf7ab] p-1 rounded'
         >
           <BiLeftArrowAlt className='text-white text-xl' />
-        </div>
+        </button>
 
         <button
           onClick={scrollRight}
