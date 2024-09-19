@@ -32,8 +32,8 @@ const page = ({ params }: { params: { trending: string } }) => {
             <h3>Filters</h3>
           </div>
 
-          <div className='py-3 px-2.5'>
-            <h3 className='bg-[#262626] text-white text-center p-2'>
+          <div className='py-3 px-2.5 border-b border-b-gray-500'>
+            <h3 className='bg-[#262626] text-white text-center uppercase p-2'>
               Availability
             </h3>
             <div className='flex justify-between items-center *:text-white my-2'>
@@ -53,7 +53,7 @@ const page = ({ params }: { params: { trending: string } }) => {
                       label='In Stack'
                       variant='solid'
                     />
-                    <span>5</span>
+                    <span className='text-white'>5</span>
                   </Box>
                   <Box
                     sx={{ display: "flex", justifyContent: "space-between" }}
@@ -64,11 +64,37 @@ const page = ({ params }: { params: { trending: string } }) => {
                       label='Out of Stock'
                       variant='solid'
                     />
-                    <span>2</span>
+                    <span className='text-white'>2</span>
                   </Box>
                 </RadioGroup>
               </FormControl>
             </div>
+          </div>
+          <div className='py-3 px-2.5 border-b border-b-gray-500'>
+            <h3 className='bg-[#262626] text-white text-center uppercase p-2'>
+              Price
+            </h3>
+            <div className='flex justify-between items-center *:text-white my-2'>
+              <p>The highest price is $35.00</p>
+              <button>Reset</button>
+            </div>
+
+            <div className='w-full flex items-center gap-10'>
+              <div className="w-1/2">
+                <label className="text-white" htmlFor=''>Min price:</label>
+                <input
+                  className='bg-transparent outline-none border border-gray-500 rounded-sm text-white p-2'
+                  type='text'
+                /> 
+              </div>   
+              <div className="w-1/2">
+                <label className="text-white" htmlFor=''>Min price:</label>
+                <input
+                  className='bg-transparent outline-none border border-gray-500 rounded-sm text-white p-2'
+                  type='text'
+                /> 
+              </div>   
+            </div> 
           </div>
         </div>
 

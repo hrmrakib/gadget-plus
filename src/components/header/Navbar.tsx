@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, {useState} from "react";
 import TopBar from "./TopBar";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
@@ -6,8 +8,19 @@ import { IoSearchOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { IoBagAddSharp } from "react-icons/io5";
+import Drawer from "../Drawer";
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+  };
+
   return (
     <nav>
       <TopBar />
@@ -177,14 +190,20 @@ const Navbar = () => {
               5
             </span>
           </div>
-          <div className='relative'>
+          <div 
+            className='relative cursor-pointer' 
+            onClick={toggleDrawer}
+          >
             <IoBagAddSharp />
             <span className='absolute w-4 h-4 -top-2 -right-2 rounded-full bg-blue-600 text-[12px] flex items-center justify-center'>
               2
             </span>
           </div>
+
         </div>
       </div>
+
+      <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />
     </nav>
   );
 };
