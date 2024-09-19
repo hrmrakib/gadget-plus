@@ -204,7 +204,7 @@ const FilterDrawer:React.FC<FilterDrawerType> = ({isOpen, onClose}) => {
                 sx={{ gap: 2, flexWrap: "wrap", flexDirection: "row" }}
               >
                 {["primary", "neutral", "danger", "success", "warning"].map(
-                  (colore:string) => (
+                  (colore:any) => (
                     <Sheet
                       key={colore}
                       sx={{
@@ -223,7 +223,7 @@ const FilterDrawer:React.FC<FilterDrawerType> = ({isOpen, onClose}) => {
                         overlay
                         variant='solid'
                         color={colore} 
-                        checkedIcon={<Done fontSize='xl2' />}
+                        checkedIcon={<Done />}
                         value={colore}
                         slotProps={{
                           input: { "aria-label": colore },
