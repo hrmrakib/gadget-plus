@@ -79,7 +79,7 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className='size-10'
                   width={10}
                   height={10}
-                  src='./ambition.png'
+                  src='/headphone.jpg'
                   alt=''
                 />
               </div>
@@ -112,7 +112,7 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className='size-10'
                   width={10}
                   height={10}
-                  src='./ambition.png'
+                  src='/headphone.jpg'
                   alt=''
                 />
               </div>
@@ -145,7 +145,7 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className='size-10'
                   width={10}
                   height={10}
-                  src='./ambition.png'
+                  src='/headphone.jpg'
                   alt=''
                 />
               </div>
@@ -178,7 +178,7 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className='size-10'
                   width={10}
                   height={10}
-                  src='./ambition.png'
+                  src='/headphone.jpg'
                   alt=''
                 />
               </div>
