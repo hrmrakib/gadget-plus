@@ -14,12 +14,13 @@ import React from "react";
 import { FaEye, FaHeart, FaPlus, FaStar } from "react-icons/fa";
 import { useState } from "react";
 import FilterDrawer from "@/components/product/FilterDrawer";
+import Image from "next/image";
 
 const params = {
   trending: "iPhone",
 };
 
-const GadgetDynamic:React.FC = () => {
+const GadgetDynamic: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<boolean>(true);
 
@@ -30,7 +31,6 @@ const GadgetDynamic:React.FC = () => {
   const closeDrawer = () => {
     setIsDrawerOpen(false);
   };
-
 
   const trendingUpperCase =
     params.trending.charAt(0).toUpperCase() + params.trending.slice(1);
@@ -233,7 +233,7 @@ const GadgetDynamic:React.FC = () => {
                 sx={{ gap: 2, flexWrap: "wrap", flexDirection: "row" }}
               >
                 {["primary", "neutral", "danger", "success", "warning"].map(
-                  (colore:string) => (
+                  (colore: string) => (
                     <Sheet
                       key={colore}
                       sx={{
@@ -252,7 +252,7 @@ const GadgetDynamic:React.FC = () => {
                         overlay
                         variant='solid'
                         // color={colore}
-                        checkedIcon={<Done  />}
+                        checkedIcon={<Done />}
                         value={colore}
                         slotProps={{
                           input: { "aria-label": colore },
@@ -265,7 +265,7 @@ const GadgetDynamic:React.FC = () => {
                         }}
                         sx={{
                           "--joy-focus-outlineOffset": "4px",
-                          "--joy-palette-focusVisible": (theme:any) =>
+                          "--joy-palette-focusVisible": (theme: any) =>
                             theme.vars.palette[colore][500],
                           [`& .${radioClasses.action}.${radioClasses.focusVisible}`]:
                             {
@@ -326,10 +326,20 @@ const GadgetDynamic:React.FC = () => {
 
             {/* products header filter */}
             <div className='flex items-center gap-2 *:text-white'>
-              <div onClick={()=>setViewMode(true)} className={`${viewMode && "bg-[#262626]"} border p-2 border-gray-600 rounded-sm cursor-pointer`}>
+              <div
+                onClick={() => setViewMode(true)}
+                className={`${
+                  viewMode && "bg-[#262626]"
+                } border p-2 border-gray-600 rounded-sm cursor-pointer`}
+              >
                 <IoGridOutline />
               </div>
-              <div onClick={()=>setViewMode(false)} className={`${!viewMode && "bg-[#262626]"} border p-2 border-gray-600 rounded-sm cursor-pointer`}>
+              <div
+                onClick={() => setViewMode(false)}
+                className={`${
+                  !viewMode && "bg-[#262626]"
+                } border p-2 border-gray-600 rounded-sm cursor-pointer`}
+              >
                 <MdTableRows />
               </div>
 
@@ -356,92 +366,101 @@ const GadgetDynamic:React.FC = () => {
           </div>
 
           {/* products - cloumn view*/}
-          {viewMode && <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-            {[1, 2, 3].map((v, i) => (
-              <div key={i} className='bg-[#1c1c1c] p-5'>
-                <div className='bg-[#262626] flex flex-col items-center justify-center gap-2'>
-                  <img
-                    src='/ultramax-watch.avif'
-                    className='w-full h-60 lg:h-72'
-                    width={220}
-                    height={350}
-                    alt='ultra'
-                  />
-                  <button className='w-full flex items-center justify-center gap-3 py-2 border border-gray-700 text-white'>
-                    <FaPlus />
-                    Add to Cart
-                  </button>
-                </div>
+          {viewMode && (
+            <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+              {[1, 2, 3].map((v, i) => (
+                <div key={i} className='bg-[#1c1c1c] p-5'>
+                  <div className='bg-[#262626] flex flex-col items-center justify-center gap-2'>
+                    <Image
+                      src='/ultramax-watch.avif'
+                      className='w-full h-60 lg:h-72'
+                      width={220}
+                      height={350}
+                      alt='ultra'
+                    />
+                    <button className='w-full flex items-center justify-center gap-3 py-2 border border-gray-700 text-white'>
+                      <FaPlus />
+                      Add to Cart
+                    </button>
+                  </div>
 
-                <h2 className='text-2xl text-white my-2'>
-                  Ultra max 2.01 Big Diaplay
-                </h2>
-                <div className='flex items-center gap-1 *:text-orange-500'>
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
+                  <h2 className='text-2xl text-white my-2'>
+                    Ultra max 2.01 Big Diaplay
+                  </h2>
+                  <div className='flex items-center gap-1 *:text-orange-500'>
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </div>
+                  <h3 className='text-2xl text-red-700 font-semibold my-2'>
+                    $56.00
+                  </h3>
+                  <hr />
+                  <div className='flex items-center justify-center my-2 gap-5 *:text-blue-700 *:text-lg'>
+                    <FaHeart />
+                    <FaEye />
+                  </div>
                 </div>
-                <h3 className='text-2xl text-red-700 font-semibold my-2'>
-                  $56.00
-                </h3>
-                <hr />
-                <div className='flex items-center justify-center my-2 gap-5 *:text-blue-700 *:text-lg'>
-                  <FaHeart />
-                  <FaEye />
-                </div>
-              </div>
-            ))}
-          </div> }
+              ))}
+            </div>
+          )}
 
           {/* products - row view*/}
-          {!viewMode && <div className='mt-10 grid grid-cols-1 gap-10'>
-            {[1, 2, 3].map((v, i) => (
-              <div key={i} className='bg-[#1c1c1c] p-5 flex flex-col lg:flex-row items-center justify-between gap-10'>
-                <div className='flex flex-col lg:flex-row items-center lg:items-start gap-7'>
-                <div className='bg-[#262626] w-60 h-60'>
-                  <img
-                    src='/computer.jpg'
-                    className='w-full h-full p-6 zooming'
-                    width={220}
-                    height={350}
-                    alt='ultra'
-                  />
+          {!viewMode && (
+            <div className='mt-10 grid grid-cols-1 gap-10'>
+              {[1, 2, 3].map((v, i) => (
+                <div
+                  key={i}
+                  className='bg-[#1c1c1c] p-5 flex flex-col lg:flex-row items-center justify-between gap-10'
+                >
+                  <div className='flex flex-col lg:flex-row items-center lg:items-start gap-7'>
+                    <div className='bg-[#262626] w-60 h-60'>
+                      <Image
+                        src='/computer.jpg'
+                        className='w-full h-full p-6 zooming'
+                        width={220}
+                        height={350}
+                        alt='ultra'
+                      />
+                    </div>
+                    <div className='max-w-80'>
+                      <h2 className='text-2xl text-white font-semibold my-2'>
+                        Ultra max 2.01 Big Diaplay
+                      </h2>
+                      <p className='text-white mt-2'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id provident, explicabo sequi mollitia voluptatem earum!
+                      </p>
+                    </div>
                   </div>
-                  <div className="max-w-80">
-                    <h2 className='text-2xl text-white font-semibold my-2'>
-                      Ultra max 2.01 Big Diaplay
-                    </h2>
-                    <p className="text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident, explicabo sequi mollitia voluptatem earum!</p>
+
+                  <div>
+                    <div className='flex items-center gap-1 *:text-orange-500'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                    <h3 className='text-2xl text-red-700 font-semibold my-2'>
+                      $56.00
+                    </h3>
+                    <hr />
+                    <div className='flex items-center justify-center my-2 gap-5 *:text-blue-700 *:text-lg'>
+                      <FaHeart />
+                      <FaEye />
+                    </div>
+                    <button className='w-full flex items-center justify-center gap-3 py-2 border border-gray-700 text-white'>
+                      <FaPlus />
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
-
-                <div>
-                <div className='flex items-center gap-1 *:text-orange-500'>
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-                <h3 className='text-2xl text-red-700 font-semibold my-2'>
-                  $56.00
-                </h3>
-                <hr />
-                <div className='flex items-center justify-center my-2 gap-5 *:text-blue-700 *:text-lg'>
-                  <FaHeart />
-                  <FaEye />
-                </div>
-                <button className='w-full flex items-center justify-center gap-3 py-2 border border-gray-700 text-white'>
-                    <FaPlus />
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>}
-
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
