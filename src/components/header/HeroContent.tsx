@@ -53,7 +53,7 @@ export default function HeroCarousel() {
           <div className='carousel__cell number-slide1 '>
             <Image
               className='w-[200px] h-[200px]'
-              src='/iphone14vs15.jpg'
+              src='/hero/iphone14vs15.jpg'
               width={350}
               height={350}
               alt='iphone'
@@ -63,19 +63,19 @@ export default function HeroCarousel() {
             <Image
               className='w-[200px] h-[200px]'
             
-            src='/vivobook.avif' width={350} height={350} alt='iphone' />
+            src='/hero/vivobook.avif' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide3'>
-            <Image className='w-[200px] h-[200px]' src='/watch.avif' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/hero/watch.avif' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide4'>
-            <Image className='w-[200px] h-[200px]' src='/speaker.avif' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/hero/speaker.avif' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide5'>
-            <Image className='w-[200px] h-[200px]' src='/headphone.png' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/hero/headphone.png' width={350} height={350} alt='iphone' />
           </div>
           <div className='carousel__cell number-slide6'>
-            <Image className='w-[200px] h-[200px]' src='/macbook.jpg' width={350} height={350} alt='iphone' />
+            <Image className='w-[200px] h-[200px]' src='/hero/macbook.jpg' width={350} height={350} alt='iphone' />
           </div>
         </div>
       </div>
